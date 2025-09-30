@@ -10,10 +10,10 @@ export default async function handler(req, res) {
   }
 
   const apiKey = process.env.YOUTUBE_API_KEY; // Defina no Vercel
-  const channelId = req.query.channelId || "SEU_CHANNEL_ID";
+  const channelId = req.query.channelId || "redeassociadas";
 
   try {
-    const url = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${channelId}&key=${apiKey}`;
+    const url = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${redeassociadas}&key=${AIzaSyAu1b_r1lBZ47erWIJayBY2LhOuiVkSbWo}`;
     const response = await fetch(url);
     const data = await response.json();
 
